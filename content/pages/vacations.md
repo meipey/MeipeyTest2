@@ -1,0 +1,5 @@
+---
+layout: vacations
+permalink: "/vacations"
+
+---

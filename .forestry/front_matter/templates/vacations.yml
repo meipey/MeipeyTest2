@@ -14,3 +14,5 @@ fields:
   default: vacations
   config:
     required: true
+pages:
+- content/pages/vacations.md
