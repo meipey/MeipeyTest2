@@ -1,5 +1,5 @@
 ---
 layout: vacations
-permalink: "/vacations.html"
+permalink: "/vacations"
 
 ---
