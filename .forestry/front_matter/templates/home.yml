@@ -1,0 +1,16 @@
+---
+label: Home
+fields:
+  - name: permalink
+    type: text
+    label: Permalink
+    config:
+      required: true
+  - name: layout
+    type: text
+    hidden: true
+    label: layout
+    default: home
+    config:
+      required: true
+hide_body: true
