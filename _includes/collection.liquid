@@ -1,0 +1,21 @@
+{% comment %}
+
+Inputs: 
+
+- items: collection to display, defaults to "collectoins.page"
+- category: display pages with this category only, defaults to "no filter"
+
+Usage:
+
+All Products: {% include collection, items: collections.product %}
+
+{% endcomment %}
+<ul>
+  {% assign _items = items | default: collections.page %}
+  {%- for item in _items -%}
+    {% if category == undefined or item.data.categories contains category %}
+      <li><a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.data.title }}</a></li>
+    {% endif %}
+  {%- endfor -%}
+</ul>
+

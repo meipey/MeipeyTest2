@@ -1,0 +1,26 @@
+{% comment %}
+
+Insert a list of page/post/product filtered by category
+
+Inputs:
+
+- filter: a category
+
+Usage:
+
+```
+{% include tags, filter: "post" %}
+```
+
+
+{% endcomment %}
+<ol>
+  {%- for tag in collections.categories %}
+    {% if filter == undefined or filter contains tag %}
+      <li>
+        <a href="{{ site.url }}{{ site.baseurl }}/tags/{{ tag | slug }}">{{ tag }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ol>
+

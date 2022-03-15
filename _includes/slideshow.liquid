@@ -1,0 +1,45 @@
+{% comment %}
+
+Input:
+
+- images, usually stored in current page front matter
+
+Usage:
+
+Here is a slideshow which shows the images of the `images` key in the page front matter, with images expected to be 833px wide
+{% include slideshow, images: images, width: 833 %}
+
+{% endcomment %}
+<script src="{{ site.url }}{{ site.baseurl }}/js/splide.min.js"></script>
+<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/splide.min.css">
+
+{% if images.size > 1 %}
+<div class="splide slideshow">
+	<div class="splide__track">
+		<ul class="splide__list">
+      {%- for item in images %}
+      <li class="splide__slide">
+        {% assign item_url = item }} %}
+        {% image item_url, title, 480, 1280000000, 480, width %}
+      </li>
+      {% endfor -%}
+		</ul>
+	</div>
+</div>
+<script>
+  new Splide('.splide', {
+    type: 'fade',
+  }).mount();
+</script>
+
+<style>
+.splide, .splide__track, .splide__list, .splide__slide {
+    width: inherit;
+    height: inherit;
+    min-height: inherit;
+  }
+</style>
+{% else if images.size == 1 %}
+  {% assign item_url = images[0] }} %}
+  {% image item_url, title, 480, 12800000000000, 480, width %}
+{% endif %}
