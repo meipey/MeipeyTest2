@@ -11,3 +11,5 @@ fields:
 - type: text
   name: title
   label: title
+pages:
+- content/pages/index.md
