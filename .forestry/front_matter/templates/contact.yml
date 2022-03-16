@@ -1,16 +1,16 @@
 ---
 label: Contact
-fields:
-  - name: permalink
-    type: text
-    label: Permalink
-    config:
-      required: true
-  - name: layout
-    type: text
-    hidden: true
-    label: layout
-    default: contact
-    config:
-      required: true
 hide_body: true
+fields:
+- name: permalink
+  type: text
+  label: Permalink
+  config:
+    required: true
+- name: layout
+  type: text
+  hidden: true
+  label: layout
+  default: contact
+  config:
+    required: true
