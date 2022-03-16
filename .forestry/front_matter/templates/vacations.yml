@@ -1,52 +1,56 @@
 ---
 label: Vacations
 fields:
-  - type: textarea
-    name: aboutthistemplate
-    label: 1stcolumn
-    default: >-
-      <h3>Links that matter</h3><p><a href="https://www.silex.me/"
-      target="_blank" title="Silex website builder">Powered by Silex</a><a
-      href="https://www.free-css.com/assets/files/free-css-templates/preview/page231/travel/"
-      target="_blank"><br>Inspired by this template</a><br><a
-      href="https://unsplash.com/search/photos/travel" target="_blank"
-      title="Travel photos">Photos from unslplash</a><br></p>
-    config:
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - type: text
-    name: yourlinks
-    label: yourlinks
-    default: "<h3>Your links<br></h3><p><a href=\"https://www.silex.me/\" target=\"_blank\" title=\"Silex website builder\">Powered by Silex</a><a href=\"https://www.free-css.com/assets/files/free-css-templates/preview/page231/travel/\" target=\"_blank\"><br>Inspired by this template</a><br><a href=\"https://unsplash.com/search/photos/travel\" target=\"_blank\" title=\"Travel photos\">Photos from unslplash</a><br></p><span class=\"_wysihtml-temp-caret-fix\" style=\"position: absolute; display: block; min-width: 1px; z-index: 99999;\">\uFEFF</span>"
-  - type: textarea
-    name: links
-    label: links
-    default: >-
-      <h3>Links that matter</h3><p><a href="https://www.silex.me/"
-      target="_blank" title="Silex website builder">Powered by Silex</a><a
-      href="https://www.free-css.com/assets/files/free-css-templates/preview/page231/travel/"
-      target="_blank"><br>Inspired by this template</a><br><a
-      href="https://unsplash.com/search/photos/travel" target="_blank"
-      title="Travel photos">Photos from unslplash</a><br></p>
-    config:
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - type: textarea
-    name: yourlinksright
-    label: yourlinksright
-    default: >-
-      <h3>Links that matter</h3><p><a href="https://www.silex.me/"
-      target="_blank" title="Silex website builder">Powered by Silex</a><a
-      href="https://www.free-css.com/assets/files/free-css-templates/preview/page231/travel/"
-      target="_blank"><br>Inspired by this template</a><br><a
-      href="https://unsplash.com/search/photos/travel" target="_blank"
-      title="Travel photos">Photos from unslplash</a><br></p>
-    config:
-      wysiwyg: true
-      schema:
-        format: html-blocks
+  - type: field_group
+    name: groupfooter
+    label: groupfooterlabel
+    fields:
+      - type: textarea
+        name: aboutthistemplate
+        label: 1stcolumn
+        default: >-
+          <h3>Links that matter</h3><p><a href="https://www.silex.me/"
+          target="_blank" title="Silex website builder">Powered by Silex</a><a
+          href="https://www.free-css.com/assets/files/free-css-templates/preview/page231/travel/"
+          target="_blank"><br>Inspired by this template</a><br><a
+          href="https://unsplash.com/search/photos/travel" target="_blank"
+          title="Travel photos">Photos from unslplash</a><br></p>
+        config:
+          wysiwyg: true
+          schema:
+            format: html-blocks
+      - type: text
+        name: yourlinks
+        label: yourlinks
+        default: "<h3>Your links<br></h3><p><a href=\"https://www.silex.me/\" target=\"_blank\" title=\"Silex website builder\">Powered by Silex</a><a href=\"https://www.free-css.com/assets/files/free-css-templates/preview/page231/travel/\" target=\"_blank\"><br>Inspired by this template</a><br><a href=\"https://unsplash.com/search/photos/travel\" target=\"_blank\" title=\"Travel photos\">Photos from unslplash</a><br></p><span class=\"_wysihtml-temp-caret-fix\" style=\"position: absolute; display: block; min-width: 1px; z-index: 99999;\">\uFEFF</span>"
+      - type: textarea
+        name: links
+        label: links
+        default: >-
+          <h3>Links that matter</h3><p><a href="https://www.silex.me/"
+          target="_blank" title="Silex website builder">Powered by Silex</a><a
+          href="https://www.free-css.com/assets/files/free-css-templates/preview/page231/travel/"
+          target="_blank"><br>Inspired by this template</a><br><a
+          href="https://unsplash.com/search/photos/travel" target="_blank"
+          title="Travel photos">Photos from unslplash</a><br></p>
+        config:
+          wysiwyg: true
+          schema:
+            format: html-blocks
+      - type: textarea
+        name: yourlinksright
+        label: yourlinksright
+        default: >-
+          <h3>Links that matter</h3><p><a href="https://www.silex.me/"
+          target="_blank" title="Silex website builder">Powered by Silex</a><a
+          href="https://www.free-css.com/assets/files/free-css-templates/preview/page231/travel/"
+          target="_blank"><br>Inspired by this template</a><br><a
+          href="https://unsplash.com/search/photos/travel" target="_blank"
+          title="Travel photos">Photos from unslplash</a><br></p>
+        config:
+          wysiwyg: true
+          schema:
+            format: html-blocks
   - name: permalink
     type: text
     label: Permalink
