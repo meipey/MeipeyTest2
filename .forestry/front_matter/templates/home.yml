@@ -1,25 +1,24 @@
 ---
 label: Home
-hide_body: true
 fields:
-- name: permalink
-  type: text
-  label: Permalink
-  config:
-    required: true
-- name: layout
-  type: text
-  hidden: true
-  label: layout
-  default: home
-  config:
-    required: true
-- name: label_voor_text
-  type: text
-  config:
-    required: false
-  label: Label voor text
-  default: dit is de default
-  description: g hfylfl ghlugylugly ghghlghg
-pages:
-- content/pages/index.md
+  - type: textarea
+    name: texthomepagetravel
+    label: label_texthomepagetravel
+    default: ''
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - name: permalink
+    type: text
+    label: Permalink
+    config:
+      required: true
+  - name: layout
+    type: text
+    hidden: true
+    label: layout
+    default: home
+    config:
+      required: true
+hide_body: true
