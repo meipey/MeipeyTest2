@@ -20,5 +20,6 @@ fields:
     required: false
   label: Label voor text
   default: dit is de default
+  description: g hfylfl ghlugylugly ghghlghg
 pages:
 - content/pages/index.md
