@@ -14,5 +14,11 @@ fields:
   default: home
   config:
     required: true
+- name: label_voor_text
+  type: text
+  config:
+    required: false
+  label: Label voor text
+  default: dit is de default
 pages:
 - content/pages/index.md
