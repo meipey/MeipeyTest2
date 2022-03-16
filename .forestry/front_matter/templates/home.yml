@@ -1,24 +1,26 @@
 ---
 label: Home
-fields:
-  - type: textarea
-    name: texthomepagetravel
-    label: label_texthomepagetravel
-    default: ''
-    config:
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - name: permalink
-    type: text
-    label: Permalink
-    config:
-      required: true
-  - name: layout
-    type: text
-    hidden: true
-    label: layout
-    default: home
-    config:
-      required: true
 hide_body: true
+fields:
+- type: textarea
+  name: texthomepagetravel
+  label: label_texthomepagetravel
+  default: ''
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- name: permalink
+  type: text
+  label: Permalink
+  config:
+    required: true
+- name: layout
+  type: text
+  hidden: true
+  label: layout
+  default: home
+  config:
+    required: true
+pages:
+- content/pages/index.md
